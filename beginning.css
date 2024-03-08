@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+.image{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/FsyfsRXx/aa.jpg');
+}
+h1{
+  position: relative; 
+  left: -10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 10px;
+}
+ul{
+  list-style-type: none;
+}
+li a{
+  float: inline-start;
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 700px;
+  bottom:80px;
+}
+li a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.nav-toggle{
+  color: white;
+  font-weight: 100px;
+  margin-left: 250px;
+  position: relative;
+  bottom: 45px;
+  display: none;
+}
+.container{
+  overflow: hidden;
+}
+/* media queries */
+
+@media only screen and (max-width: 1024px){
+  .nav-links{
+    margin-left: -450px;
+    margin-top: 10px;
+    display: inline-flex;
+  }
+  .bear, .bear1{
+    margin-left: -320px;
+    margin-top: -70px;
+    display: inline-flex;
+  }
+  .bear1, .bear2{
+    margin-left: -200px;
+    margin-top: -85px;
+  }
+  .bear2, .bear3{
+    margin-left: -80px;
+  }
+  .bear3{
+    margin-left: 5px;
+    margin-top: -85px;
+  }
+}
+@media only screen and (width < 992px){
+  .nav-links{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 150px;
+  }
+  .hover{
+    margin-left: 180px;
+  }
+  .hover-link{
+    position: relative;
+    top: 50px;
+  }
+  .bear{
+    position: absolute;
+    margin-left: -235px;
+    margin-top: 100px;
+  }
+  .bear1{
+    position: absolute;
+    margin-left: -230px;
+    margin-top: 140px;
+  }
+  .bear2{
+    position: absolute;
+    margin-left: -220px;
+    margin-top: 180px;
+  }
+  .bear3{
+    position: absolute;
+    margin-left: -230px;
+    margin-top: 220px;
+  }
+  #heading{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+  .nav-toggle{
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 700px;
+  }
+}
+@media only screen and (width < 970px){
+  .nav-toggle{
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 680px;
+  }
+  body{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+}
